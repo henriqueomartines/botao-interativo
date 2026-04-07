@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ativar Byakugan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="pagina">
+    <h1 id="texto">Byakugan desativado</h1>
+    <img
+      id="olho"
+      src="https://static.wikia.nocookie.net/naruto/images/1/18/Byakugan.png/revision/latest/scale-to-width-down/180?cb=20150314104523"
+      alt="Olho Byakugan"
+    >
+    <button id="botao" type="button">Ativar Byakugan</button>
+  </div>
+
+  <script>
+    const pagina = document.getElementById('pagina');
+    const texto = document.getElementById('texto');
+    const olho = document.getElementById('olho');
+    const botao = document.getElementById('botao');
+
+    let ativado = false;
+
+    botao.addEventListener('click', function () {
+      ativado = !ativado;
+
+      if (ativado) {
+        pagina.style.backgroundColor = '#ece7ff';
+        texto.textContent = 'Byakugan ativado';
+        olho.style.display = 'block';
+        botao.textContent = 'Desativar Byakugan';
+      } else {
+        pagina.style.backgroundColor = '#2b2340';
+        texto.textContent = 'Byakugan desativado';
+        olho.style.display = 'none';
+        botao.textContent = 'Ativar Byakugan';
+      }
+    });
+  </script>
+</body>
+</html>

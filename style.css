@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #2b2340;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+#olho {
+  width: 220px;
+  max-width: 80%;
+  display: none;
+  border-radius: 10px;
+}
+
+#botao {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #b7a8ff;
+  color: #2f2457;
+  font-size: 16px;
+  cursor: pointer;
+}
